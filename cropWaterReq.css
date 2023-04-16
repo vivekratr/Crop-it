@@ -1,0 +1,200 @@
+.crop-water-requirement-child {
+    position: absolute;
+    top: 68px;
+    left: 164px;
+    width: 931px;
+    height: 205px;
+  }
+  .image-4-icon {
+    position: absolute;
+    top: calc(50% - 542px);
+    left: calc(50% - 476px);
+    border-radius: var(--br-xs);
+    width: 1012px;
+    height: 324px;
+    object-fit: cover;
+  }
+  .crop-water-requirement-item {
+    position: absolute;
+    top: 476px;
+    left: 416px;
+    width: 387px;
+    height: 29px;
+    overflow: hidden;
+  }
+  .crop-water-requirement-inner {
+    position: absolute;
+    top: 478px;
+    left: 333px;
+    border-radius: var(--br-9xl);
+    width: 581px;
+    height: 676px;
+  }
+  .nitrogen {
+    align-self: stretch;
+    position: relative;
+    line-height: 20px;
+  }
+  .enter-the-value {
+    position: relative;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    width: 211px;
+    flex-shrink: 0;
+  }
+  .input,
+  .input1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .input1 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--colours-blue-gray-50);
+    border: 1px solid var(--colours-blue-gray-200);
+    box-sizing: border-box;
+    height: 48px;
+    flex-shrink: 0;
+    overflow: hidden;
+    flex-direction: row;
+    padding: var(--padding-sm) var(--padding-base);
+    font-size: var(--font-size-base);
+    color: var(--colours-other-gray-100);
+  }
+  .input {
+    position: absolute;
+    top: 532px;
+    left: 384px;
+    border-radius: var(--br-8xs);
+    width: 479px;
+    flex-direction: column;
+    gap: var(--gap-9xs);
+  }
+  .enter-the-value1 {
+    position: relative;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    width: 261px;
+    flex-shrink: 0;
+  }
+  .input2 {
+    position: absolute;
+    top: 638px;
+    left: 384px;
+    border-radius: var(--br-8xs);
+    width: 479px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .enter-the-value2 {
+    position: relative;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    width: 250px;
+    flex-shrink: 0;
+  }
+  .input4 {
+    position: absolute;
+    top: 744px;
+    left: 384px;
+    border-radius: var(--br-8xs);
+    width: 479px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .input7 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--colours-blue-gray-50);
+    border: 1px solid var(--colours-blue-gray-200);
+    box-sizing: border-box;
+    height: 48px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .input6 {
+    position: absolute;
+    top: 850px;
+    left: 384px;
+    border-radius: var(--br-8xs);
+    width: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .rainfall-mm {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 112px;
+  }
+  .input9 {
+    border-radius: var(--br-5xs);
+    background-color: var(--colours-blue-gray-50);
+    border: 1px solid var(--colours-blue-gray-200);
+    box-sizing: border-box;
+    width: 210px;
+    height: 48px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .input8 {
+    position: absolute;
+    top: 850px;
+    left: 653px;
+    border-radius: var(--br-8xs);
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .predict {
+    align-self: stretch;
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    display: inline-block;
+    width: 81px;
+    flex-shrink: 0;
+  }
+  .input10 {
+    position: absolute;
+    top: 985px;
+    left: 567px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen);
+    width: 112px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-sm) var(--padding-base);
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+  }
+  .crop-water-requirement1 {
+    position: relative;
+    background-color: var(--color-palegoldenrod-100);
+    width: 100%;
+    height: 1220px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--colours-blue-gray-600);
+    font-family: var(--font-inter);
+  }
