@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crop Recommendation</title>
+    
+    <link rel="stylesheet" href="crop_rec_output.js">
+    <link rel="stylesheet" type="text/css" href="../static/css/crop_rec_ouput.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="/" class="logolink">
+        <!-- <h1 class="logo">Crop it Baby!</h1> -->
+        <img alt="Crop it Baby!!" width="110" height="85" src="../static/cropit1.gif"></a>
+        <h4  id="text_toplogo"> Crop It </h4>
+        <h4 id="text1_toplogo">
+          Optimize your crop yield and resource use efficiency with CropIt
+        </h4>
+        
+
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/crop">Crop Recommendation</a></li>
+          <li><a href="/fertile">Fertilizer Recommendation</a></li>
+          <li><a href="/water_in">Water Requirement</a></li>
+          <li><a href="/cropmap_in">Crop Mapping</a></li>
+          <li><a href="#" style="margin-left: 600px;">Contact us</a></li>
+          
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+    <div id="grey_container">
+        <div id="top_g">
+            Crop Recommendation
+        </div>
+    
+        <div id="white_container">
+
+            <table>
+                <thead>
+                  <tr>
+                    <th style="text-align: center;">Crop Image
+                      
+                    </th>
+                    
+                    <th style="text-align: center;">Crop Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for data in datas %}
+                  <tr>
+                    <td style="text-align: center;"><img src="{{data['images']}}" style="height: 100px; width: 100px; " alt="Example Image">
+                      </td>
+                    <td style="text-align: center;">{{data['crop_name']}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              
+            
+            <div id="top_g1">
+                Data of your Soil-
+  
+            </div>
+            <div id="section">
+     <section class="your_data">
+        <div class="box1" id="boxdk1">
+            <p class="richa">Nitrogen</p>
+            <div id="box11">
+
+                <div class="intext" id="nitro_val">
+                   {{nitro}}
+                </div>
+            </div>
+        </div>
+        <div class="box1" id="boxdk2">
+            <p class="richa"> Potassium</p>
+            <div id="box22">
+                <div class="intext" id="potass_val">
+                  {{potass}}
+
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="box1" id="boxdk3">
+            <p class="richa">Phosphorous</p>
+            <div id="box33">
+                <div class="intext" id="phospho_val">
+                   {{phospho}}
+                    
+
+                </div>
+            </div>
+
+        </div>
+        <div class="box1" id="boxdk4">           
+             <p class="richa">PH</p>
+
+            <div id="box44">
+                <div class="intext" id="ph_val">
+                    {{ph}}
+
+                </div>
+            </div>
+
+        </div>
+        <div class="box1" id="boxdk5">      
+                  <p class="richa">Humidity</p>
+
+            <div id="box55">
+                <div class="intext" id="humid_val">
+                   {{humid}}
+                    
+
+                </div>
+            </div>
+
+        </div>
+        <div class="box1" id="boxdk6">
+            <p class="richa">Temperature</p>
+            
+            <div id="box66">
+                <div class="intext">
+                   {{temp}}
+                  
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+
+        </div>
+            
+
+    </div>
+
+   
+
+    <div id="footmain">
+        <!-- <div id="footer"> -->
+          <img src="../static/footer.jpg" alt="" id="footer">
+          <div class="titlefoot">
+          
+            <p id="titlefoot">Want new updates?</p>
+          
+          
+            <p id="title1foot">What are you waiting for, Subscribe now!!</p>
+            <div id="typebox">
+              <div>
+                <!-- <img src="email.png" alt="pika pi pikachu" class="emailpng"> -->
+                <a href="https://github.com/vivekratr/Crop-it" id="github">
+      
+                  <img src="../static/billi.png"  alt="" class="billi">
+                </a>
+                </div>
+                <form action="http://127.0.0.1:5500/landing.html">
+                  <div id="email_box">
+                <input name="main_email" type="email" placeholder="Email address">
+              </div>
+                <button name="main_email" type="submit"><p id="sub1">Submit</p></button>
+              </form>
+                <img src="../static/cropit1.gif" alt="" id="logo_foot">
+                <h4 id="logolink_foot"> www.cropit.com </h4>
+            </div>
+            
+          <!-- </div> -->
+        </div>
+        </div>
+       
+</body>
+</html>
+
+
+
+
+

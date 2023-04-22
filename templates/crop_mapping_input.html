@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Mapping</title>
+   
+    <link rel="stylesheet" type="text/css" href="../static/css/crop_mapping_input.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="/" class="logolink">
+        <!-- <h1 class="logo">Crop it Baby!</h1> -->
+        <img alt="../static/Crop it Baby!!" width="110" height="85" src="../static/cropit1.gif"></a>
+        <h4  id="text_toplogo"> Crop It </h4>
+        <h4 id="text1_toplogo">
+          Optimize your crop yield and resource use efficiency with CropIt
+        </h4>
+        
+
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/crop">Crop Recommendation</a></li>
+          <li><a href="/fertile">Fertilizer Recommendation</a></li>
+          <li><a href="/water_in">Water Requirement</a></li>
+          <li><a href="/cropmap_in">Crop Mapping</a></li>
+          <li><a href="#" style="margin-left: 600px;">Contact us</a></li>
+          
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+
+    <div class="body">
+<h1 id="title_body">Crop Mapping</h1>
+
+<div class="form">
+<div id="formtab"><form action="/cropmap_out" method="POST"> <!-- method="POST"-->
+    <!-- <div class="form-group" >
+      <label id="label_nitro">State :</label><br>
+      <div class="form-group">
+         <input type="" name="crop_type" class="inp1" id="input_phospho" placeholder="     Enter the value of Temperature "> 
+        <div id="opt1">
+        <label id="label_croptype">Crop type :</label> 
+   
+    </div>
+      </div>
+    </div> -->
+
+    <div class="form-group">
+      <!-- <input type="" name="crop_type" class="inp1" id="input_phospho" placeholder="     Enter the value of Temperature "> -->
+      <div id="opt1">
+      <!-- <label id="label_croptype">Crop type :</label> -->
+      
+      <label id="label_croptype" style="width: auto;right: 78px;">Crop type :</label>
+
+          
+          <div id="white_container">
+              <select name="crop_opt" id="options">
+                  <option value="NULL">Select from options</option>
+                  <!-- <option>Litchi</option>
+                  <option>Plums</option>
+                  <option>Pear</option>
+                  <option>Peach</option>
+                  <option>Apple</option>
+                  <option>Beet Root</option>
+                  <option>Ash Gourd</option> -->
+                  <!-- <option>Ricebean (nagadal)</option>
+                  <option>Perilla</option>
+                  <option>Pump Kin</option>
+                  <option>Kapas</option>
+                  <option>Water Melon</option>
+                  <option>Cauliflower</option>
+                  <option>Coffee</option> -->
+
+                  <option>Tea</option>
+                  <option>Jack Fruit</option>
+                  <option>Drum Stick</option>
+                  <!-- <option>Bitter Gourd</option> -->
+                  <option>Rubber</option>
+                  <option>Cardamom</option>
+                  <option>Cashewnut Raw</option>
+                  <option>Redish</option>
+                  <option>Carrot</option>
+                  <!-- <option>Turnip</option> -->
+                  <option>Moth</option>
+                  <option>Guar seed</option>
+                  <option>Barley</option>
+                  <option>Pineapple</option>
+                  <option>Paddy</option>
+                  <option>Jute</option>
+                  <option>Ginger</option>
+                  <option>Khesari</option>
+                  <option>Varagu</option>
+                  <option>Sannhamp</option>
+                  <option>Niger seed</option>
+                  <option>Cabbage</option>
+                  <option>Rice</option>
+                  <!-- <option>Sapota</option>
+                  <option>Pome Granet</option>
+                  <option>Lemon</option> -->
+                  <option>Cowpea(Lobia)</option>
+                  <option>Mesta</option>
+                  <option>Rapeseed &Mustard</option>
+                  <option>Tomato</option>
+                  <option>Pome Fruit</option>
+                  <option>Papaya</option>
+                  <option>Orange</option>
+                  <option>Mango</option>
+                  <option>Grapes</option>
+                  <option>Citrus Fruit</option>
+                  <option>Brinjal</option>
+                  <option>Bhindi</option>
+                  <option>Soyabean</option>
+                  <option>Potato</option>
+                  <option>Coriander</option>
+                  <option>Small millets</option>
+                  <!-- <option>Samai</option> -->
+
+                  <option>Onion</option>
+                  <option>Safflower</option>
+                  <option>Linseed</option>
+                  <option>Sesamum</option>
+                  <option>Masoor</option>
+                  <option>Wheat</option>
+                  <option>Gram</option>
+                  <option>Tobacco</option>
+                  <option>Ragi</option>
+
+                  <option>Jowar</option>
+                  <option>Horse-gram</option>
+                  <option>Castor seed</option>
+                  <option>Sunflower</option>
+                  <option>Groundnut</option>
+                  <option>Arhar/Tur</option>
+                  <option>Urad</option>
+                  <option>Moong(Green Gram)</option>
+                  <option>Turmeric</option>
+                  <option>other oilseeds</option>
+                  <option>Dry chillies</option>
+                  <option>Black pepper</option>
+                  <option>Tapioca</option>
+                  <option>Sugarcane</option>
+                  <option value="Coconut ">Coconut</option>
+                  <option>Cashewnut</option>
+                  <option>Banana</option>
+                  <option>Rice</option>
+  
+              </select>
+          </div>
+          <div id="submit_form1">
+            <button type="submit" style="background: #3CA43A; text-align: center;" class="btn btn-primary">Predict</button>
+          </div>
+     
+  </div>
+    </div>
+
+    </div>
+    <!-- <div id="submit_form">
+    <button type="submit" style="background: #3CA43A; text-align: center;" class="btn btn-primary">Predict</button> -->
+    <!-- <div id="container_redirect"><a href="https://www.timeanddate.com/weather/india" id="redirect">Click to check temperature and 
+humidity</a>
+</div>
+  </div> -->
+  
+  </form>
+  <div id="main_image">
+    <img src="../static/crop_map_content.png" alt="" id="mainimg">
+  </div>
+</div>
+</div>
+
+
+    </div>
+
+
+
+    <div id="footmain">
+      <!-- <div id="footer"> -->
+        <img src="../static/footer.jpg" alt="" id="footer">
+      </div>
+      <div class="titlefoot">
+        
+        <p id="titlefoot">Want new updates?</p>
+      
+      
+        <p id="title1foot">What are you waiting for, Subscribe now!!</p>
+        <div id="typebox">
+          <div>
+            <!-- <img src="email.png" alt="pika pi pikachu" class="emailpng"> -->
+            <a href="https://github.com/vivekratr/Crop-it" id="github">
+  
+              <img src="../static/billi.png"  alt="" class="billi">
+            </a>
+            </div>
+            <form action="http://127.0.0.1:5500/landing.html">
+              <div id="email_box">
+            <input name="main_email" type="email" placeholder="Email address">
+          </div>
+            <button name="main_email" type="submit"><p id="sub1">Submit</p></button>
+          </form>
+            <img src="../static/cropit1.gif" alt="" id="logo_foot">
+            <h4 id="logolink_foot"> www.cropit.com </h4>
+        </div>
+        
+      <!-- </div> -->
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6032d8668bcff3d3aa49c35bcdff5ea2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6032d8668bcff3d3aa49c35bcdff5ea2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6032d8668bcff3d3aa49c35bcdff5ea2 = L.map(
+                "map_6032d8668bcff3d3aa49c35bcdff5ea2",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55c4cb6fcb7f92b7d7d50243493a2a42 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6032d8668bcff3d3aa49c35bcdff5ea2);
+        
+    
+            var feature_group_5911a83e0987685a5c9bd0331e599277 = L.featureGroup(
+                {}
+            ).addTo(map_6032d8668bcff3d3aa49c35bcdff5ea2);
+        
+    
+            var marker_e6b71fbff5613d6de417ae76de22b5e7 = L.marker(
+                [16.059975133333335, 80.27575453333334],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_1ece5c41239f4e5efbd092ac731a21a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_e6b71fbff5613d6de417ae76de22b5e7.setIcon(icon_1ece5c41239f4e5efbd092ac731a21a1);
+        
+    
+        var popup_e06309592471ed685d1a7416b1948daa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_602c16d288e128ad550b5b6c51de82d6 = $(`<div id="html_602c16d288e128ad550b5b6c51de82d6" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Andhra Pradesh</td></tr><tr><th>Area:</th><td><br>750 acre</td></tr><tr><th>Production:</th><td><br>600 pounds</td></tr></table></div>`)[0];
+                popup_e06309592471ed685d1a7416b1948daa.setContent(html_602c16d288e128ad550b5b6c51de82d6);
+            
+        
+
+        marker_e6b71fbff5613d6de417ae76de22b5e7.bindPopup(popup_e06309592471ed685d1a7416b1948daa)
+        ;
+
+        
+    
+    
+            var marker_e3278a24faf94dd08020a97bd54e2e0c = L.marker(
+                [26.334961833333335, 93.0454855],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_9744ab4218a380a49dd97ccf6909ff75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_e3278a24faf94dd08020a97bd54e2e0c.setIcon(icon_9744ab4218a380a49dd97ccf6909ff75);
+        
+    
+        var popup_72da55aa8ecaf0e1a1ea785bf4add148 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_740e7d38ff16d9d291427e3fb4bb3a01 = $(`<div id="html_740e7d38ff16d9d291427e3fb4bb3a01" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Assam</td></tr><tr><th>Area:</th><td><br>65264 acre</td></tr><tr><th>Production:</th><td><br>4796 pounds</td></tr></table></div>`)[0];
+                popup_72da55aa8ecaf0e1a1ea785bf4add148.setContent(html_740e7d38ff16d9d291427e3fb4bb3a01);
+            
+        
+
+        marker_e3278a24faf94dd08020a97bd54e2e0c.bindPopup(popup_72da55aa8ecaf0e1a1ea785bf4add148)
+        ;
+
+        
+    
+    
+            var marker_7955c1b1cc19620b24e479b634d125f1 = L.marker(
+                [31.104423, 77.166623],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_5fbd40ee06c66000461ab816e009ab97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_7955c1b1cc19620b24e479b634d125f1.setIcon(icon_5fbd40ee06c66000461ab816e009ab97);
+        
+    
+        var popup_0bb75a3116310538180e3e93d03e2aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e65e4e207d9aa12ab8344cfe112feab = $(`<div id="html_7e65e4e207d9aa12ab8344cfe112feab" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Himachal Pradesh</td></tr><tr><th>Area:</th><td><br>2082 acre</td></tr><tr><th>Production:</th><td><br>1735 pounds</td></tr></table></div>`)[0];
+                popup_0bb75a3116310538180e3e93d03e2aa4.setContent(html_7e65e4e207d9aa12ab8344cfe112feab);
+            
+        
+
+        marker_7955c1b1cc19620b24e479b634d125f1.bindPopup(popup_0bb75a3116310538180e3e93d03e2aa4)
+        ;
+
+        
+    
+    
+            var marker_9844aa5a7af02b19994b679cb1110298 = L.marker(
+                [33.837129000000004, 74.61865275],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_c545990a0e6f6fed04af28f3cdb0f191 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_9844aa5a7af02b19994b679cb1110298.setIcon(icon_c545990a0e6f6fed04af28f3cdb0f191);
+        
+    
+        var popup_24fdb256a190bde299b9483300450cea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9244570b8dfd8abf1b9e31aa55d35f7 = $(`<div id="html_f9244570b8dfd8abf1b9e31aa55d35f7" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Jammu and Kashmir </td></tr><tr><th>Area:</th><td><br>3 acre</td></tr><tr><th>Production:</th><td><br>2 pounds</td></tr></table></div>`)[0];
+                popup_24fdb256a190bde299b9483300450cea.setContent(html_f9244570b8dfd8abf1b9e31aa55d35f7);
+            
+        
+
+        marker_9844aa5a7af02b19994b679cb1110298.bindPopup(popup_24fdb256a190bde299b9483300450cea)
+        ;
+
+        
+    
+    
+            var marker_97b6c7fe552edb1ade1360c081206d32 = L.marker(
+                [25.674673, 94.110988],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_3082acd5a872d4f5afb454158517ec26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_97b6c7fe552edb1ade1360c081206d32.setIcon(icon_3082acd5a872d4f5afb454158517ec26);
+        
+    
+        var popup_49252067ae9e7952839149855a7b4f0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ea24fb2c615db2b3c6e002f0001b00d = $(`<div id="html_1ea24fb2c615db2b3c6e002f0001b00d" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Nagaland</td></tr><tr><th>Area:</th><td><br>13640 acre</td></tr><tr><th>Production:</th><td><br>2827 pounds</td></tr></table></div>`)[0];
+                popup_49252067ae9e7952839149855a7b4f0e.setContent(html_1ea24fb2c615db2b3c6e002f0001b00d);
+            
+        
+
+        marker_97b6c7fe552edb1ade1360c081206d32.bindPopup(popup_49252067ae9e7952839149855a7b4f0e)
+        ;
+
+        
+    
+    
+            var marker_09f204eea34ba4ccadf74e81f316d76a = L.marker(
+                [17.930004, 78.92139399999999],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_e610b3cb7ce635e74213dd27a4a7a215 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_09f204eea34ba4ccadf74e81f316d76a.setIcon(icon_e610b3cb7ce635e74213dd27a4a7a215);
+        
+    
+        var popup_0b2851618456982dfdfd41818e9a0c33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce41a2eca1c192ffc8231b0fe85b3ab6 = $(`<div id="html_ce41a2eca1c192ffc8231b0fe85b3ab6" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Telangana </td></tr><tr><th>Area:</th><td><br>5675 acre</td></tr><tr><th>Production:</th><td><br>4481 pounds</td></tr></table></div>`)[0];
+                popup_0b2851618456982dfdfd41818e9a0c33.setContent(html_ce41a2eca1c192ffc8231b0fe85b3ab6);
+            
+        
+
+        marker_09f204eea34ba4ccadf74e81f316d76a.bindPopup(popup_0b2851618456982dfdfd41818e9a0c33)
+        ;
+
+        
+    
+    
+            var marker_0fda6e260665ea9d9173af6b0aef32a9 = L.marker(
+                [27.558369, 79.53375439285715],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_31b755f92298d090c4a7f17dce99c212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_0fda6e260665ea9d9173af6b0aef32a9.setIcon(icon_31b755f92298d090c4a7f17dce99c212);
+        
+    
+        var popup_7c0b4c2a409f3a4fd933204540dc0d39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc8f5d83f2ba16275151e7993763d094 = $(`<div id="html_fc8f5d83f2ba16275151e7993763d094" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Uttar Pradesh</td></tr><tr><th>Area:</th><td><br>944 acre</td></tr><tr><th>Production:</th><td><br>725 pounds</td></tr></table></div>`)[0];
+                popup_7c0b4c2a409f3a4fd933204540dc0d39.setContent(html_fc8f5d83f2ba16275151e7993763d094);
+            
+        
+
+        marker_0fda6e260665ea9d9173af6b0aef32a9.bindPopup(popup_7c0b4c2a409f3a4fd933204540dc0d39)
+        ;
+
+        
+    
+    
+            var marker_dd0abaf74248820f7b112ff6aa493694 = L.marker(
+                [30.324427, 78.033922],
+                {}
+            ).addTo(feature_group_5911a83e0987685a5c9bd0331e599277);
+        
+    
+            var icon_b93473c40beb062b8c0234050bfc8d53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_dd0abaf74248820f7b112ff6aa493694.setIcon(icon_b93473c40beb062b8c0234050bfc8d53);
+        
+    
+        var popup_5afaf43fcd0de39191960ae13d5ad22c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7dded9b6582e74a097a213e0696868f = $(`<div id="html_a7dded9b6582e74a097a213e0696868f" style="width: 100.0%; height: 100.0%;"><table><tr><th>Crop Name:</th><td>Ginger</td></tr><tr><th>State Name:</th><td>Uttarakhand</td></tr><tr><th>Area:</th><td><br>10011 acre</td></tr><tr><th>Production:</th><td><br>1880 pounds</td></tr></table></div>`)[0];
+                popup_5afaf43fcd0de39191960ae13d5ad22c.setContent(html_a7dded9b6582e74a097a213e0696868f);
+            
+        
+
+        marker_dd0abaf74248820f7b112ff6aa493694.bindPopup(popup_5afaf43fcd0de39191960ae13d5ad22c)
+        ;
+
+        
+    
+</script>
+</html>
