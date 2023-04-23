@@ -293,6 +293,7 @@ def index6():
     prod_mean = c.groupby('State_Name')['Production'].mean()
     import folium
     import os
+    import time
 
     file_path = 'templates/my_map.html'
     try:
