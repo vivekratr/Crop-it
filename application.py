@@ -292,6 +292,11 @@ def index6():
     area_mean = c.groupby('State_Name')['Area'].sum()
     prod_mean = c.groupby('State_Name')['Production'].mean()
     import folium
+    import os
+
+    file_path = 'templates/my_map.html'
+    os.remove(file_path)
+
     m = folium.Map(location=[20.5937, 78.9629], zoom_start=5)
 
     m1 = folium.FeatureGroup(name='crop_map')
