@@ -295,7 +295,10 @@ def index6():
     import os
 
     file_path = 'templates/my_map.html'
-    os.remove(file_path)
+    try:
+        os.remove(file_path)
+    except Exception as e:
+        pass
 
     m = folium.Map(location=[20.5937, 78.9629], zoom_start=5)
 
