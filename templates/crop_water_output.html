@@ -29,7 +29,7 @@
           <li><a href="/fertile">Fertilizer Recommendation</a></li>
           <li><a href="/water_in">Water Requirement</a></li>
           <li><a href="/cropmap_in">Crop Mapping</a></li>
-          <li><a href="#" style="margin-left: 600px;">Contact us</a></li>
+          <li><a href="/contact" style="margin-left: 600px;">Contact us</a></li>
           
 
         </ul>
@@ -59,7 +59,7 @@
             <div id="box11">
 
                 <div class="intext" id="nitro_val">
-                    NaN
+                    {{ph}}
                 </div>
             </div>
          </div>
@@ -67,7 +67,7 @@
             <p class="richa"> Nitrogen</p>
             <div id="box22">
                 <div class="intext" id="potass_val">
-                    NaN
+                   {{nitro}}
                     
                 </div>
             </div>
@@ -77,7 +77,7 @@
             <p class="richa">Railfall (mm)</p>
             <div id="box33">
                 <div class="intext" id="phospho_val">
-                    NaN
+                    {{rainf}}
 
                 </div>
             </div>
@@ -88,7 +88,7 @@
 
             <div id="box44">
                 <div class="intext" id="ph_val">
-                    NaN
+                    {{potass}}
 
                 </div>
             </div>
@@ -99,7 +99,7 @@
 
             <div id="box55">
                 <div class="intext" id="humid_val">
-                    NaN
+                    {{cropt}}
 
                 </div>
             </div>
@@ -110,17 +110,17 @@
             
             <div id="box66">
                 <div class="intext">
-         Nan
+         {{phospho}}
                 </div>
             </div>
             
          </div>
          <div id="output_txt">
           Water required for your crop as per your crop type - 
-
+            
          </div>
          <div id="op_cont">
-          <p id="opt_text" >output</p>
+          <p id="opt_text" style="font-size: x-large;text-align: center;padding-top: 30px;" >{{result1}}<br> <br><br>{{result2}}</p>
          </div>
         
 

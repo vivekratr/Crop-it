@@ -7,6 +7,11 @@ app = application
 @cross_origin() # its purpose is to be available to different countries
 def index():
     return render_template("landing.html")
+@application.route('/contact') #,methods=['GET','POST']
+@cross_origin() # its purpose is to be available to different countries
+def index10():
+    
+    return render_template("contactus.html")
 @application.route('/crop_sub',methods=['GET','POST'])
 @cross_origin() # its purpose is to be available to different countries
 def crop_sub():
@@ -147,12 +152,18 @@ def crop_sub():
   'K': {'min': 25, 'max': 35},'ph': {'min': 6.020947179, 'max': 7.493191968},'humidity': {'min': 50.04557009, 'max': 69.94807345},'temperature': {'min': 23.05951896, 'max': 27.92374437}}}
     cr =[]
     img = []
+    dict = {'rice':'../static/rice.jpeg','maize':'../static/maize.png','chickpea':'../static/chickpea.png','kidneybeans':'../static/kidneybeans.png','pigeonpeas':'../static/pigeonpeas.png',
+        'mothbeans':'../static/mothbeans.png','mungbean':'../static/mungbean.png','blackgram':'../static/blackgram.png','lentil':'../static/lentil.png','pomegranate':'../static/pomegranate.png',
+        'banana':'../static/banana.png','mango':'../static/mango.png','grapes':'../static/grapes.png','watermelon':'../static/watermelon.png','muskmelon':'../static/muskmelon.png',
+        'apple':'../static/apple.png','orange':'../static/orange.png','papaya':'../static/papaya.png','coconut':'../static/coconut.png','cotton':'../static/cotton.png',
+        'jute':'../static/jute.png','coffee':'../static/coffee.png'}
     for j in d:
         i=d[j]
         # and (potass in range(i['K']['min'],i['K']['max'])) and (ph in range(int(i['ph']['min']),int(i['ph']['max']))  and (humid in range(int(i['humidity']['min']),int(i['humidity']['max']))
         if((nitro in range(i['N']['min'],i['N']['max']))  and (phospho in range(i['P']['min'],i['P']['max']))  ):
             cr.append(j.upper())
-            img.append("../static/cropit1.gif")
+            # img.append("../static/cropit1.gif")
+            img.append(dict[j])
             
     pancake = []
     for i in range(len(cr)):
@@ -203,7 +214,23 @@ def index2():
 def index3():
     
     return render_template("cropWaterReq.html")
-
+@application.route('/water_out',methods=['GET','POST'])
+@cross_origin() # its purpose is to be available to different countries
+def index8():
+    nitro= int(request.form['nitro'])
+    potass= int(request.form['potass'])
+    phospho= int(request.form['phospho'])
+    ph= int(request.form['ph'])
+    rainf= int(request.form['rainf'])
+    cropt= request.form['cropt']
+    import pandas as pd
+    a = pd.read_csv('dataset/crops1.csv')
+    w=a[a['label'] == cropt]['water-availability(liters per year)'].mean()
+    w =(w+nitro+potass+phospho+ph+rainf)/48
+    v =w /7
+    output1=f"Water/Week = {w} litres. \n "
+    output2 = f"Water/Day = {v} litres."
+    return render_template("crop_water_output.html",nitro=nitro,potass=potass,phospho=phospho,ph=ph,rainf=rainf,cropt=cropt.upper(),result1 =output1,result2 = output2)
 
 @application.route('/cropmap_in',methods=['GET','POST'])
 @cross_origin() # its purpose is to be available to different countries

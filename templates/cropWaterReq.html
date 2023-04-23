@@ -30,7 +30,7 @@
           <li><a href="/fertile">Fertilizer Recommendation</a></li>
           <li><a href="/water_in">Water Requirement</a></li>
           <li><a href="/cropmap_in">Crop Mapping</a></li>
-          <li><a href="#" style="margin-left: 600px;">Contact us</a></li>
+          <li><a href="/contact" style="margin-left: 600px;">Contact us</a></li>
           
 
         </ul>
@@ -45,12 +45,12 @@
 
 <div class="form">
   
-<div id="formtab"><form action="http://127.0.0.1:5500/crop" > <!-- method="POST"-->
+<div id="formtab"><form action="/water_out" method="POST"> <!-- method="POST"-->
   <div id="submit_form">
     <button type="submit" style="background: #3CA43A; text-align: center;" class="btn btn-primary">Predict</button>
-    <div id="container_redirect"><a href="https://www.timeanddate.com/weather/india" id="redirect">Click to check temperature and 
+    <!-- <div id="container_redirect"><a href="https://www.timeanddate.com/weather/india"  id="redirect">Click to check temperature and 
 humidity</a>
-</div>
+</div> -->
   </div>
     <div class="form-group" >
       <label id="label_nitro">Nitrogen :</label><br>
@@ -74,7 +74,7 @@ humidity</a>
     </div>
     <div id="label_humid">
       <label id="form_humid">Rainfall:</label><br>
-      <input type="text" name="humid" id="inp_humid" >
+      <input type="text" name="rainf" id="inp_humid" >
     </div>
 
     <div class="form-group">
@@ -86,16 +86,42 @@ humidity</a>
 
           
           <div id="white_container">
-              <select id="options">
+              <select name="cropt" id="options">
                   <option>Select from options</option>
-                  <option>Maize</option>
-                  <option>Rice</option>
-                  <option>jawar</option>
-                  <option>Bajra</option>
+                  <option>maize</option>
+                  <option>chickpea</option>
+                  <option>kidneybeans</option>
+                  <option>pigeonpeas</option>
+                  <option>rice</option>
+                  <option>mothbeans</option>
+                  <option>mungbean</option>
+                  <option>blackgram</option>
+                  <option>lentil</option>
+                  <option>pomegranate</option>
+                  <option>banana</option>
+                  <option>mango</option>
+                  <option>grapes</option>
+                  <option>muskmelon</option>
+                  <option>apple</option>
+                  <option>orange</option>
+                  <option>papaya</option>
+                  <option>coconut</option>
+                  <option>cotton</option>
+                  <option>Sapota</option>
+                  <option>fingermillet</option>
                   
               </select>
           </div>
           
+
+
+
+
+
+
+
+
+
   </div>
 
     </div>
