@@ -311,8 +311,11 @@ def index6():
         popup_html = f'<table><tr><th>Crop Name:</th><td>{n}</td></tr><tr><th>State Name:</th><td>{i}</td></tr><tr><th>Area:</th><td><br>{int(area_mean[i])} acre</td></tr><tr><th>Production:</th><td><br>{int(prod_mean[i])} pounds</td></tr></table>'
         m1.add_child(folium.Marker(location=[state_data[i]['Lat'],state_data[i]['Long']], popup=popup_html, icon=folium.Icon(color='darkgreen')))
     m.add_child(m1)
-#     m.save('templates/my_map.html')
-    m.save('templates/my_map.html'+ '?v=' + str(int(time.time())))
+    m.save('templates/my_map.html')
+    
+    m.save('templates/my_map.html')
+
+#     m.save('templates/my_map.html'+ '?v=' + str(int(time.time())))
     # with open('templates/my_map.html', 'r') as f:
     #     map_html = f.read()
     return render_template("crop_map.html",crop_naam =n)
