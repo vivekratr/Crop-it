@@ -223,7 +223,7 @@ def index2():
     my_list = ['Urea', 'DAP', '14-35-14', '28-28', '17-17-17', '20-20', '10-26-26']
 
     random_elements = list(random.sample(my_list, 3))
-    dicy = {'Urea':'Urea.png','DAP':'DAP.png','14-35-14':'14-35-14.png','28-28':'28-28.png','17-17-17':'17-17-17.png','20-20':'20-20.png','10-26-26':'10-26-26.png'}
+    dicy = {'Urea':'../static/Urea.png','DAP':'../static/DAP.png','14-35-14':'../static/14-35-14.png','28-28':'../static/28-28.png','17-17-17':'../static/17-17-17.png','20-20':'../static/20-20.png','10-26-26':'../static/10-26-26.png'}
     pancake = []
     for i in random_elements:
         pancake.append({'images':f"../static/{dicy[i]}",'fert_name':i})
