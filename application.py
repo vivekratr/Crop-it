@@ -10,8 +10,28 @@ def index():
 @application.route('/contact') #,methods=['GET','POST']
 @cross_origin() # its purpose is to be available to different countries
 def index10():
+ 
     
     return render_template("contactus.html")
+
+@application.route('/contactuss', methods=['GET','POST']) #,methods=['GET','POST']
+@cross_origin() # its purpose is to be available to different countries
+def index11():
+    import pymongo
+    name =request.form['name1']
+    email =request.form['email']
+    subject=request.form['subject']
+    message=request.form['message']
+    
+    client = pymongo.MongoClient("mongodb+srv://breakratr:breakratr@vivekdb.fwdld9x.mongodb.net/?retryWrites=true&w=majority")
+    db = client['Crop']
+    collection_1 = db['Contact us']
+    dict = {'Name':name,'Email':email,'Subject':subject,'Message':message}
+    collection_1.insert_one(dict)
+    return render_template("contactus.html")
+    
+    
+
 @application.route('/crop_sub',methods=['GET','POST'])
 @cross_origin() # its purpose is to be available to different countries
 def crop_sub():
@@ -203,10 +223,10 @@ def index2():
     my_list = ['Urea', 'DAP', '14-35-14', '28-28', '17-17-17', '20-20', '10-26-26']
 
     random_elements = list(random.sample(my_list, 3))
-
+    dicy = {'Urea':'Urea.png','DAP':'DAP.png','14-35-14':'14-35-14.png','28-28':'28-28.png','17-17-17':'17-17-17.png','20-20':'20-20.png','10-26-26':'10-26-26.png'}
     pancake = []
     for i in random_elements:
-        pancake.append({'images':"../static/cropit1.gif",'fert_name':i})
+        pancake.append({'images':f"../static/{dicy[i]}",'fert_name':i})
     return render_template("fertlilzer_rec_output.html",datas =pancake[0:len(pancake)],nitro=nitro,potass=potass,phospho=phospho,crop_opt=crop_opt,temp1=temp1)
 
 @application.route('/water_in',methods=['GET','POST'])
