@@ -492,10 +492,10 @@ th, td {
 thead{
   height: 10px;
 }
-img {
+/* img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: auto;
-}
+} */
 
