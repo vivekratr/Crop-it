@@ -341,19 +341,31 @@ def index6():
 @application.route('/gpt',methods=['GET','POST'])
 @cross_origin() # its purpose is to be available to different countries
 def index13():
-    import os
-    import openai
-    openai.api_key ="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"
+    # import os
+    # import openai
+    # openai.api_key ="sk-sgJSbbGqlyMl7oUgG86sxw8CDcWCVSlEJU1kBzuqcaEDaFDd"
     input_text = request.form['input-field']
-    completion = openai.ChatCompletion.create(
-      model="gpt-3.5-turbo",
-      messages=[
-        {"role": "user", "content": input_text}
-      ]
-    )
+    # completion = openai.ChatCompletion.create(
+    #   model="gpt-3.5-turbo",
+    #   messages=[
+    #     {"role": "user", "content": input_text}
+    #   ]
+    # )
+    import cohere
 
-    output_text=completion.choices[0].message['content']
-   
+# Set up a Cohere API client with your API key
+    client = cohere.Client("osjxJajw4EvrSkcWllGOgr7XFHQJcBhaXd8RZvmC")
+
+# Define the text you want to summarize
+    text = f'''{input_text}                                                                                                                                                                                                                                                                                                                    .'''
+
+# Call the summarize method with your text
+    summary = client.summarize(text) #, num_sentences=2
+  
+# Print the summary
+    output_text = summary.summary
+    # output_text=completion.choices[0].message['content']
+
     return render_template('landing.html',output11=output_text)
 # mappu =map_html,
 
