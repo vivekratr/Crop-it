@@ -343,7 +343,7 @@ def index6():
 def index13():
     import os
     import openai
-    openai.api_key ="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"
+    openai.api_key ="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"
     input_text = request.form['input-field']
     completion = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
