@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CROP IT BABY!!</title>
+    <title>CROP IT</title>
     <!-- <link rel="stylesheet" href="landing.css"> -->
     <!-- <link rel="stylesheet" href="C:\Users\Naru\Desktop\ids ie\static\css\landing.css"> -->
     
@@ -24,7 +24,26 @@
             <h4 id="text1_toplogo">
               Optimize your crop yield and resource use efficiency with CropIt
             </h4>
-            
+            <div id="chat bhai" style="position: absolute;top: 300px; width: auto;">
+              <form method="POST" action="/gpt">
+                <input type="text" id="input-field" name="input-field" placeholder="Let's solve your queries today!!" style= "text-decoration:none;position:relative;width: 400px; margin-left: 25px ; margin-top: 42px; height: 30px; border: none; " required>
+                
+                
+                <!-- <a href="/gpt" method ='POST' type="submit"><img  id='send-button' src="../static/arrow.png" alt="aa"  style = "width: 30px;position: absolute; left: 475px;"></a> -->
+              <input type="image" id="img111" style = "width: 29px;height: 25px; position: relative; left: 120px;top: 10px;" src="../static/arrow1.png" alt="Submit" />
+                
+              </form ></div>
+
+              <div id="output111" style="padding: 30px; font-size: large; text-align:justify; color: black; top: 380px;left: 100px; position:absolute;  width: auto; height: auto;max-width: 400px; max-height: 100px; overflow: auto;">{{output11}}</div>
+<script>
+
+  var outputDiv = document.getElementById("output111");
+  if (outputDiv.innerHTML !== "") {
+    outputDiv.style.backgroundColor = "white";
+  }
+
+
+</script>
 
         </div>
         <div class="menu">

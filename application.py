@@ -338,7 +338,23 @@ def index6():
     # with open('templates/my_map.html', 'r') as f:
     #     map_html = f.read()
     return render_template("crop_map.html",crop_naam =n,mappa= map_html)
+@application.route('/gpt',methods=['GET','POST'])
+@cross_origin() # its purpose is to be available to different countries
+def index13():
+    import os
+    import openai
+    openai.api_key ="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"
+    input_text = request.form['input-field']
+    completion = openai.ChatCompletion.create(
+      model="gpt-3.5-turbo",
+      messages=[
+        {"role": "user", "content": input_text}
+      ]
+    )
 
+    output_text=completion.choices[0].message['content']
+   
+    return render_template('landing.html',output11=output_text)
 # mappu =map_html,
 
 if __name__ == '__main__':
