@@ -357,7 +357,7 @@ def index13():
     client = cohere.Client("osjxJajw4EvrSkcWllGOgr7XFHQJcBhaXd8RZvmC")
 
 # Define the text you want to summarize
-    text = f'''{input_text}                                                                                                                                                                                                                                                                                                                    .'''
+    text = f'''{input_text}     explain it in minimum 1000 words                                                                                                                                                                                                                                                                                                               .'''
 
 # Call the summarize method with your text
     summary = client.summarize(text) #, num_sentences=2
