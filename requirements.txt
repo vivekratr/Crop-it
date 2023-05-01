@@ -10,3 +10,4 @@ Werkzeug==2.2.3
 gunicorn
 pandas
 folium
+openai
