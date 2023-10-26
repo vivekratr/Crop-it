@@ -3,7 +3,7 @@ from flask_cors import CORS,cross_origin
 application = Flask(__name__, static_folder='static')
 app = application
 
-@application.route('/',methods=['GET','POST'])
+@application.route('/',methods=['GET','POST']) 
 @cross_origin() # its purpose is to be available to different countries
 def index():
     return render_template("landing.html")
