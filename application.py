@@ -9,7 +9,7 @@ def index():
     return render_template("landing.html")
 @application.route('/contact') #,methods=['GET','POST']
 @cross_origin() # its purpose is to be available to different countries
-def index10():
+def index10(): 
  
     
     return render_template("contactus.html")
