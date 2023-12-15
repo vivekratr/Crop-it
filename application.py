@@ -354,7 +354,7 @@ def index13():
     import cohere
 
 # Set up a Cohere API client with your API key
-    client = cohere.Client("osjxJajw4EvrSkcWllGOgr7XFHQJcBhaXd8RZvmC")
+    client = cohere.Client("5dPAagesHxYyp8kIg9QIyxknJB7WlAKZJmAmHXwJ")
 
 # Define the text you want to summarize
     text = f'''{input_text}     explain it in minimum 1000 words                                                                                                                                                                                                                                                                                                               .'''
