@@ -7,7 +7,7 @@ app = application
 @cross_origin() # its purpose is to be available to different countries
 def index():
     return render_template("landing.html")
-@application.route('/contact') #,methods=['GET','POST']
+@application.route('/contact') #,methods=['GET','POST'] 
 @cross_origin() # its purpose is to be available to different countries
 def index10(): 
   
